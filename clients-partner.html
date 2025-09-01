@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clients & Partners — Janus</title>
+
+  <meta name="description" content="Our valued clients and trusted partners — Janus Enterprises Limited." />
+
+  <!-- Global styles -->
+  <link rel="stylesheet" href="global.css" />
+
+  <!-- Icons (for footer/contact icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <!-- Mobile menu / interactions -->
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <!-- Top Nav -->
+  <header class="top-nav" id="topNav">
+    <div class="nav-left">
+      <a href="index.html" aria-label="Go to homepage">
+        <img src="./assets/logo.png" alt="Janus Enterprises Limited Logo" class="logo" />
+      </a>
+    </div>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="capabilities.html" class="nav-item">Industry Served</a>
+      <a href="full-portfolio.html" class="nav-item">Full Portfolio</a>
+      <a href="selected-work.html" class="nav-item">Selected Projects</a>
+      <a href="#contact" class="nav-item">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="menu-btn" id="hamburgerToggle" aria-label="Open menu" aria-controls="mobilePanel" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile slide-in -->
+  <div class="blur-overlay" id="blurOverlay" hidden></div>
+  <aside class="mobile-panel" id="mobilePanel" aria-hidden="true">
+    <button class="close-btn" id="closeHamburger" aria-label="Close menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <nav class="mobile-menu" aria-label="Mobile">
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="capabilities.html" class="mobile-link">Industry Served</a>
+      <a href="full-portfolio.html" class="mobile-link">Full Portfolio</a>
+      <a href="selected-work.html" class="mobile-link">Selected Projects</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </nav>
+  </aside>
+
+  <main id="content">
+    <!-- Hero -->
+    <section
+      class="hero-banner edge"
+      style="background:
+        linear-gradient(135deg,rgba(10,42,115,.55),rgba(124, 172, 244, 0.25)),
+        url('./client.jpg') center/cover no-repeat;">
+      <div class="hero-inner">
+        <div class="hero-content" style="color:#fff;">
+          <h1>Clients & Partners</h1>
+          <p style="color:#e2e8f0;max-width:700px;">
+            We are proud to collaborate with trusted partners and serve respected clients across Zambia’s industries, construction, and households.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients -->
+    <section class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Our Clients</h2>
+          <p>Businesses and institutions we’ve supplied or worked with.</p>
+        </header>
+
+        <div class="portfolio-grid">
+          <article class="teaser-card">
+            <img src="./TSTmining.jpg" alt="Client 1 Logo" loading="lazy" />
+            <h3>TAWANSNGHTHONG MINING LIMITED</h3>
+            <p>Partnered on industrial tools supply project, Electrical, Plumbing, PPE, Building and Other Consumables.</p>
+          </article>
+
+          <article class="teaser-card">
+            <img src="./SHIMAYOBA.jpg" alt="Client 2 Logo" loading="lazy" />
+            <h3>SHIMAYOBA DAY SECONDARY SCHOOL</h3>
+            <p>Worked together on PPE and Building Tools</p>
+          </article>
+
+          <article class="teaser-card">
+            <img src="./RDA.PNG" alt="Client 3 Logo" loading="lazy" />
+            <h3>ROAD DEVELOPMENT AGENCY</h3>
+            <p>Supplied compacting machines and PPE</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="section" style="background:var(--wash);">
+      <div class="container">
+        <header class="section-head">
+          <h2>Our Partners</h2>
+          <p>Trusted suppliers and collaborators ensuring quality and reliability.</p>
+        </header>
+
+        <div class="portfolio-grid">
+          <article class="teaser-card">
+            <img src="./assets/partners/partner1.png" alt="Partner 1 Logo" loading="lazy" />
+            <h3>Partner Name 1</h3>
+            <p>Supplier of heavy-duty construction and power tools.</p>
+          </article>
+
+          <article class="teaser-card">
+            <img src="./assets/partners/partner2.png" alt="Partner 2 Logo" loading="lazy" />
+            <h3>Partner Name 2</h3>
+            <p>Global brand for electrical & lighting solutions.</p>
+          </article>
+
+          <article class="teaser-card">
+            <img src="./assets/partners/partner3.png" alt="Partner 3 Logo" loading="lazy" />
+            <h3>Partner Name 3</h3>
+            <p>Trusted provider of plumbing and water system components.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-block">
+      <div class="cta-inner">
+        <h2>Want to work with us?</h2>
+        <a class="btn-primary" href="#contact">Get in Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-brand">
+      <a href="#topNav" aria-label="Go to homepage">
+        <img src="./assets/logo.png" alt="Janus Enterprises Limited Logo" class="footer-logo" />
+      </a>
+    </div>
+
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>Portfolio</h4>
+        <ul>
+          <li><a href="index.html#work">Case Studies</a></li>
+          <li><a href="full-portfolio.html">Full Portfolio</a></li>
+          <li><a href="selected-projects.html">Selected Projects</a></li>
+          <li><a href="clients-partner.html">Clients & Partners</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Capabilities</h4>
+        <ul>
+          <li>Product Sourcing & Supply</li>
+          <li>Repairs & Installations</li>
+          <li>Auto & Industrial Services</li>
+          <li>Logistics Coordination</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html#about">About Janus</a></li>
+          <li><a href="index.html#about">Leadership</a></li>
+          <li><a href="index.html#about">Sustainability</a></li>
+          <li><a href="index.html#about">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="socials">
+          <li><a href="https://wa.me/260967222812" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp: +260 967 222 812</a></li>
+          <li><a href="tel:+260967222812"><i class="fa-solid fa-phone"></i> Mobile: +260 967 222 812</a></li>
+          <li><a href="mailto:januskn97@gmail.com"><i class="fa-solid fa-envelope"></i> Email: januskn97@gmail.com</a></li>
+          <li><a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+          <li><a href="#"><i class="fa-brands fa-x-twitter"></i> X</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Janus Enterprises Limited. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

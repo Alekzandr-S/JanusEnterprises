@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Janus</title>
+
+  <meta name="description" content="Janus Enterprises Limited — portfolio, capabilities, clients, and contact." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="mask-icon" href="./assets/fevicon.png" color="#1f6fe5">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="global.css">
+
+  <!-- Script (defer) -->
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <!-- Top Nav -->
+  <header class="top-nav" id="topNav">
+    <div class="nav-left">
+      <a class="brand" href="#">
+        <img src="./assets/logo.png" alt="Janus Enterprises Limited Logo" class="logo">
+      </a>
+    </div>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-item" href="full-portfolio.html">Portfolio</a>
+      <a class="nav-item" href="capabilities.html">Industry Served</a>
+      <a class="nav-item" href="#clients">Clients</a>
+      <a class="nav-item" href="#about">About</a>
+      <a class="nav-item" href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-right">
+      <button class="menu-btn" id="hamburgerToggle" aria-label="Open menu" aria-controls="mobilePanel" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile slide-in (single instance) -->
+  <div class="blur-overlay" id="blurOverlay"></div>
+  <aside class="mobile-panel" id="mobilePanel" aria-hidden="true">
+    <button class="close-btn" id="closeHamburger" aria-label="Close menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <nav class="mobile-menu" aria-label="Mobile">
+      <a href="full-portfolio.html" class="mobile-link">Portfolio</a>
+      <a href="capabilities.html" class="mobile-link">Industry Served</a>
+      <a href="clients-partner.html" class="mobile-link">Clients</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </nav>
+  </aside>
+
+  <!-- Main -->
+  <main id="content">
+    <!-- Hero -->
+    <!-- Hero Carousel -->
+<section class="hero-carousel edge" aria-label="Featured highlights">
+  <div class="carousel-track" id="heroTrack">
+
+    <!-- Slide 1 -->
+    <article class="carousel-slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 3">
+      <div class="slide-media"
+           style="background:
+             linear-gradient(100deg,rgba(253, 254, 255, 0.482),rgba(216, 232, 255, 0.25)),
+             url('./gifittings.JPG') center/cover no-repeat;">
+      </div>
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1>Building Zambia’s Future with Innovation</h1>
+          <p>Reliable products, professional services, and solutions for industry, builders, and households.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Slide 2 -->
+    <article class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 of 3">
+      <div class="slide-media"
+           style="background:
+             linear-gradient(100deg,rgba(253, 254, 255, 0.482),rgba(216, 232, 255, 0.25)),
+             url('./assets/grinder.JPG') center/cover no-repeat;">
+      </div>
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1>Industrial & Power Tools Supply</h1>
+          <p>End-to-end sourcing and delivery with fast turnaround and dependable after-sales support.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Slide 3 -->
+    <article class="carousel-slide" role="group" aria-roledescription="slide" aria-label="3 of 3">
+      <div class="slide-media"
+           style="background:
+             linear-gradient(100deg,rgba(253, 254, 255, 0.482),rgba(216, 232, 255, 0.25)),
+             url('./assets/15.JPG') center/cover no-repeat;">
+      </div>
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1>Electrical & Plumbing Installations</h1>
+          <p>From quotation to installation and handover, one accountable partner end-to-end.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 of 3">
+      <div class="slide-media"
+           style="background:
+             linear-gradient(100deg,rgba(253, 254, 255, 0.482),rgba(216, 232, 255, 0.25)),
+             url('./hige\ 2.JPG') center/cover no-repeat;">
+      </div>
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1>Kitchen & Shop Display Fittings</h1>
+          <p>Transforming kitchens and retailspaces with modern fittings and durable displays.</p>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-btn prev" aria-label="Previous slide" id="heroPrev">
+    ‹
+  </button>
+  <button class="carousel-btn next" aria-label="Next slide" id="heroNext">
+    ›
+  </button>
+
+  <!-- Dots -->
+  <div class="carousel-dots" role="tablist" aria-label="Slide selectors" id="heroDots"></div>
+</section>
+
+    <!-- Intro -->
+   <!-- Intro / About Janus -->
+<section class="section intro" id="about">
+  <div class="container">
+    <h2>About Us</h2>
+
+    <p>
+      <strong>Janus Enterprises Limited</strong> is a Zambian company supplying quality products and delivering professional
+      installations and services for industry, construction, retail, and households. We focus on speed, reliability, and
+      long-term partnerships, from sourcing and procurement to delivery, install, and after-sales support.
+    </p>
+
+    <p>
+      Our portfolio spans <em>industrial & power tools</em>, <em>electrical and plumbing</em>, <em>kitchen fittings & shop displays</em>,
+      <em>security & lighting</em>, and <em>general hardware</em>. We back this up with repairs, site work, and project coordination so
+      you get one accountable partner end-to-end.
+    </p>
+
+    <!-- What we do -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:16px;">
+      <div>
+        <h3 style="margin:0 0 8px;font-size:16px;">What we do</h3>
+        <ul style="margin:0;padding-left:18px;line-height:1.7;">
+          <li>Product sourcing & supply (tools, fittings, hardware)</li>
+          <li>Installations: electrical, plumbing, security, lighting</li>
+          <li>Kitchen fittings & shop display accessories</li>
+          <li>Repairs, servicing, and after-sales support</li>
+          <li>Logistics coordination & site deliveries</li>
+          <li>Project quotations & pro-forma invoices</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 style="margin:0 0 8px;font-size:16px;">Sectors we serve</h3>
+        <ul style="margin:0;padding-left:18px;line-height:1.7;">
+          <li>Mining & industrial operations</li>
+          <li>Construction & property development</li>
+          <li>Retail, hospitality & commercial spaces</li>
+          <li>Residential & estate projects</li>
+          <li>Agriculture & community infrastructure</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 style="margin:0 0 8px;font-size:16px;">How we work</h3>
+        <ul style="margin:0;padding-left:18px;line-height:1.7;">
+          <li>Share requirements → we advise on options & availability</li>
+          <li>Site visit / measurements where needed</li>
+          <li>Quotation or pro-forma, then sourcing & delivery</li>
+          <li>Installation & handover, with ongoing support</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Location + quick contact -->
+    <div style="margin-top:18px;">
+      <p style="margin:0;">
+        <strong>Location:</strong> Reeves Mall, Choma, Southern Province, Zambia.
+      </p>
+      <p style="margin:.25rem 0 0;">
+        <strong>Quick contact:</strong>
+        <a href="https://wa.me/260967222812" target="_blank" rel="noopener">WhatsApp +260 967 222 812</a> ·
+        <a href="tel:+260967222812">Mobile +260 967 222 812</a> ·
+        <a href="mailto:januskn97@gmail.com">januskn97@gmail.com</a>
+      </p>
+    </div>
+
+    <!-- CTA -->
+    <div class="hero-buttons" style="margin-top:30px;">
+      <a href="full-portfolio.html" class="btn-secondary">View Portfolio</a>
+      <a href="selected-work.html" class="btn-primary">Selected Projects</a>
+    </div>
+  </div>
+</section>
+
+    <!-- Featured teaser -->
+    <section class="section featured" id="work">
+      <div class="container">
+        <header class="section-head">
+          <h2>Featured Projects</h2>
+          <p>A quick look at recent work. Explore the full portfolio for more.</p>
+        </header>
+
+        <div class="teaser-grid">
+          <article class="teaser-card">
+            <img src="./assets/vendor4.JPG" alt="Industrial Tools Supply — Kitwe Mine">
+            <h3>Industrial & Power Tools Supply</h3>
+            <p>End‑to‑end sourcing and delivery of heavy‑duty power tools.</p>
+            <a class="more" href="industrial-power-tools.html">View case</a>
+          </article>
+
+          <article class="teaser-card">
+            <img src="./PHOTO-2025-08-23-02-44-37 2.jpg" alt="electrical">
+            <h3>Electrical & Plumbing Supply</h3>
+            <p>Multi‑site security rollout with centralized monitoring.</p>
+            <a class="more" href="electrical-&-plumbing.html">View case</a>
+          </article>
+
+          <article class="teaser-card">
+            <img src="./assets/kitchen.JPG" alt="Repairs & Refurbs — Lusaka Workshops">
+            <h3>Kitchen & Shop Display Fittings</h3>
+            <p>Transforming kitchens and retail spaces with modern fittings and durable displays.”
+              </p>
+            <a class="more" href="kitchen-fittings.html">View case</a>
+          </article>
+        </div>
+      </div>
+
+      <!-- Edge-to-edge CTA -->
+      <div class="cta-block">
+        <div class="cta-inner">
+          <h2>Explore the Full Portfolio</h2>
+          <a class="btn-primary" href="full-portfolio.html">View Portfolio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ <!-- Footer -->
+<footer class="site-footer" id="contact">
+  <div class="footer-brand">
+    <a href="#topNav" aria-label="Go to homepage">
+      <img src="./assets/logo.png" alt="Janus Enterprises Limited Logo" class="footer-logo">
+    </a>
+  </div>
+
+  <div class="footer-columns">
+    <div class="footer-col">
+      <h4>Portfolio</h4>
+      <ul>
+        <li><a href="#work">Case Studies</a></li>
+        <li><a href="selected-work.html">Selected Projects</a></li>
+        <li><a href="clients-partner.html">Clients & Partners</a></li>
+        <li><a href="capabilities.html">Industries Served</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Capabilities</h4>
+      <ul>
+        <li>Product Sourcing & Supply</li>
+        <li>Repairs & Installations</li>
+        <li>Auto & Industrial Services</li>
+        <li>Logistics Coordination</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About Janus</a></li>
+        <li><a href="#about">Leadership</a></li>
+        <li><a href="#about">Sustainability</a></li>
+        <li><a href="#about">Careers</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul class="socials">
+        <li><a href="https://wa.me/260967222812" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp: +260 967 222 812</a></li>
+        <li><a href="tel:+260967222812"><i class="fa-solid fa-phone"></i> Mobile: +260 967 222 812</a></li>
+        <li><a href="mailto:januskn97@gmail.com"><i class="fa-solid fa-envelope"></i> Email: januskn97@gmail.com</a></li>
+        <li><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+        <li><a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i> X</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Janus Enterprises Limited. All rights reserved.</p>
+  </div>
+</footer>
