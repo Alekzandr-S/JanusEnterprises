@@ -64,7 +64,7 @@
   <main id="content">
     <!-- Hero -->
     <!-- Hero Carousel -->
-<section class="hero-carousel edge" aria-label="Featured highlights">
+<section class="hero-carousel edge reveal" aria-label="Featured highlights">
   <div class="carousel-track" id="heroTrack">
 
     <!-- Slide 1 -->
@@ -72,7 +72,7 @@
       <div class="slide-media"
            style="background:
              linear-gradient(100deg,rgba(253, 254, 255, 0.482),rgba(216, 232, 255, 0.25)),
-             url('./gifittings.JPG') center/cover no-repeat;">
+             url('./assets/images/gifittings.JPG') center/cover no-repeat;">
       </div>
       <div class="hero-inner">
         <div class="hero-content">
@@ -87,7 +87,7 @@
       <div class="slide-media"
            style="background:
              linear-gradient(100deg,rgba(253, 254, 255, 0.482),rgba(216, 232, 255, 0.25)),
-             url('./assets/grinder.JPG') center/cover no-repeat;">
+             url('./assets/images/grinder.JPG') center/cover no-repeat;">
       </div>
       <div class="hero-inner">
         <div class="hero-content">
@@ -102,7 +102,7 @@
       <div class="slide-media"
            style="background:
              linear-gradient(100deg,rgba(253, 254, 255, 0.482),rgba(216, 232, 255, 0.25)),
-             url('./assets/15.JPG') center/cover no-repeat;">
+             url('./assets/images/15.JPG') center/cover no-repeat;">
       </div>
       <div class="hero-inner">
         <div class="hero-content">
@@ -112,11 +112,12 @@
       </div>
     </article>
 
+    <!-- Slide 4 -->
     <article class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 of 3">
       <div class="slide-media"
            style="background:
              linear-gradient(100deg,rgba(253, 254, 255, 0.482),rgba(216, 232, 255, 0.25)),
-             url('./hige\ 2.JPG') center/cover no-repeat;">
+             url('./assets/images/hige\ 2.JPG') center/cover no-repeat;">
       </div>
       <div class="hero-inner">
         <div class="hero-content">
@@ -140,9 +141,8 @@
   <div class="carousel-dots" role="tablist" aria-label="Slide selectors" id="heroDots"></div>
 </section>
 
-    <!-- Intro -->
-   <!-- Intro / About Janus -->
-<section class="section intro" id="about">
+   <!-- About Janus -->
+<section class="section intro reveal" id="about">
   <div class="container">
     <h2>About Us</h2>
 
@@ -159,8 +159,8 @@
     </p>
 
     <!-- What we do -->
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:16px;">
-      <div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:16px;" data-stagger>
+      <div class="reveal">
         <h3 style="margin:0 0 8px;font-size:16px;">What we do</h3>
         <ul style="margin:0;padding-left:18px;line-height:1.7;">
           <li>Product sourcing & supply (tools, fittings, hardware)</li>
@@ -172,7 +172,7 @@
         </ul>
       </div>
 
-      <div>
+      <div class="reveal">
         <h3 style="margin:0 0 8px;font-size:16px;">Sectors we serve</h3>
         <ul style="margin:0;padding-left:18px;line-height:1.7;">
           <li>Mining & industrial operations</li>
@@ -183,7 +183,7 @@
         </ul>
       </div>
 
-      <div>
+      <div class="reveal">
         <h3 style="margin:0 0 8px;font-size:16px;">How we work</h3>
         <ul style="margin:0;padding-left:18px;line-height:1.7;">
           <li>Share requirements → we advise on options & availability</li>
@@ -195,51 +195,51 @@
     </div>
 
     <!-- Location + quick contact -->
-    <div style="margin-top:18px;">
+    <div style="margin-top:18px;" class="reveal">
       <p style="margin:0;">
         <strong>Location:</strong> Reeves Mall, Choma, Southern Province, Zambia.
       </p>
       <p style="margin:.25rem 0 0;">
         <strong>Quick contact:</strong>
-        <a href="https://wa.me/260967222812" target="_blank" rel="noopener">WhatsApp +260 967 222 812</a> ·
-        <a href="tel:+260967222812">Mobile +260 967 222 812</a> ·
-        <a href="mailto:januskn97@gmail.com">januskn97@gmail.com</a>
+        <a href="https://wa.me/260967222812" target="_blank" rel="noopener">WhatsApp: +260 967 222 812</a> ·
+        <a href="tel:+260967222812">Mobile: +260 967 222 812</a> ·
+        <a href="mailto:janus@janusenterprises.com">Email:janus@janusenterprises.com</a>
       </p>
     </div>
 
     <!-- CTA -->
     <div class="hero-buttons" style="margin-top:30px;">
-      <a href="full-portfolio.html" class="btn-secondary">View Portfolio</a>
-      <a href="selected-work.html" class="btn-primary">Selected Projects</a>
+      <a href="full-portfolio.html" class="btn-secondary reveal">View Portfolio</a>
+      <a href="selected-work.html" class="btn-primary reveal">Selected Projects</a>
     </div>
   </div>
 </section>
 
     <!-- Featured teaser -->
-    <section class="section featured" id="work">
+    <section class="section featured reveal" id="work">
       <div class="container">
-        <header class="section-head">
+        <header class="section-head reveal">
           <h2>Featured Projects</h2>
           <p>A quick look at recent work. Explore the full portfolio for more.</p>
         </header>
 
-        <div class="teaser-grid">
-          <article class="teaser-card">
-            <img src="./assets/vendor4.JPG" alt="Industrial Tools Supply — Kitwe Mine">
+        <div class="teaser-grid" data-stagger>
+          <article class="teaser-card reveal">
+            <img src="./assets/images/vendor4.JPG" alt="Industrial Tools Supply — Kitwe Mine">
             <h3>Industrial & Power Tools Supply</h3>
-            <p>End‑to‑end sourcing and delivery of heavy‑duty power tools.</p>
+            <p>End-to-end sourcing and delivery of heavy-duty power tools.</p>
             <a class="more" href="industrial-power-tools.html">View case</a>
           </article>
 
-          <article class="teaser-card">
-            <img src="./PHOTO-2025-08-23-02-44-37 2.jpg" alt="electrical">
+          <article class="teaser-card reveal">
+            <img src="./assets/images/PHOTO-2025-08-23-02-44-37 2.jpg" alt="electrical">
             <h3>Electrical & Plumbing Supply</h3>
-            <p>Multi‑site security rollout with centralized monitoring.</p>
+            <p>Multi-site security rollout with centralized monitoring.</p>
             <a class="more" href="electrical-&-plumbing.html">View case</a>
           </article>
 
-          <article class="teaser-card">
-            <img src="./assets/kitchen.JPG" alt="Repairs & Refurbs — Lusaka Workshops">
+          <article class="teaser-card reveal">
+            <img src="./assets/images/kitchen.JPG" alt="Repairs & Refurbs — Lusaka Workshops">
             <h3>Kitchen & Shop Display Fittings</h3>
             <p>Transforming kitchens and retail spaces with modern fittings and durable displays.”
               </p>
@@ -249,10 +249,10 @@
       </div>
 
       <!-- Edge-to-edge CTA -->
-      <div class="cta-block">
+      <div class="cta-block reveal">
         <div class="cta-inner">
           <h2>Explore the Full Portfolio</h2>
-          <a class="btn-primary" href="full-portfolio.html">View Portfolio</a>
+          <a class="btn-primary reveal" href="full-portfolio.html">View Portfolio</a>
         </div>
       </div>
     </section>
@@ -260,14 +260,14 @@
 
  <!-- Footer -->
 <footer class="site-footer" id="contact">
-  <div class="footer-brand">
+  <div class="footer-brand reveal">
     <a href="#topNav" aria-label="Go to homepage">
       <img src="./assets/logo.png" alt="Janus Enterprises Limited Logo" class="footer-logo">
     </a>
   </div>
 
-  <div class="footer-columns">
-    <div class="footer-col">
+  <div class="footer-columns" data-stagger>
+    <div class="footer-col reveal">
       <h4>Portfolio</h4>
       <ul>
         <li><a href="#work">Case Studies</a></li>
@@ -277,7 +277,7 @@
       </ul>
     </div>
 
-    <div class="footer-col">
+    <div class="footer-col reveal">
       <h4>Capabilities</h4>
       <ul>
         <li>Product Sourcing & Supply</li>
@@ -287,7 +287,7 @@
       </ul>
     </div>
 
-    <div class="footer-col">
+    <div class="footer-col reveal">
       <h4>Company</h4>
       <ul>
         <li><a href="#about">About Janus</a></li>
@@ -297,12 +297,12 @@
       </ul>
     </div>
 
-    <div class="footer-col">
+    <div class="footer-col reveal">
       <h4>Contact</h4>
       <ul class="socials">
-        <li><a href="https://wa.me/260967222812" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp: +260 967 222 812</a></li>
-        <li><a href="tel:+260967222812"><i class="fa-solid fa-phone"></i> Mobile: +260 967 222 812</a></li>
-        <li><a href="mailto:januskn97@gmail.com"><i class="fa-solid fa-envelope"></i> Email: januskn97@gmail.com</a></li>
+        <li><a href="https://wa.me/260967222812" target="_blank"><i class="fa-brands fa-whatsapp"></i> +260 967 222 812</a></li>
+        <li><a href="tel:+260967222812"><i class="fa-solid fa-phone"></i> +260 967 222 812</a></li>
+        <li><a href="mailto:janus@janusenterprises.com"><i class="fa-solid fa-envelope"></i> janus@janusenterprises.com</a></li>
         <li><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
         <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
         <li><a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i> X</a></li>

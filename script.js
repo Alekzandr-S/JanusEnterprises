@@ -132,3 +132,34 @@ const menuBtn = document.getElementById('hamburgerToggle');
   update();
   startAuto();
 })();
+
+// -------- Reveal on scroll (keeps your existing behavior) --------
+const reveals = document.querySelectorAll('.reveal');
+
+function handleScroll() {
+  const triggerBottom = window.innerHeight * 0.85;
+  reveals.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < triggerBottom) {
+      el.classList.add('visible');
+    }
+  });
+}
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('load', handleScroll);
+
+// -------- Stagger setup: add to any container with data-stagger --------
+// Example targets: .teaser-grid, .portfolio-grid, any row of cards
+function applyStagger() {
+  document.querySelectorAll('[data-stagger]').forEach(group => {
+    const items = group.querySelectorAll('.reveal');
+    items.forEach((el, i) => {
+      // 90ms steps feel smooth; tweak if you like (e.g., 80 or 120)
+      el.style.setProperty('--reveal-delay', `${i * 90}ms`);
+    });
+  });
+}
+applyStagger();
+
+// Optional: re-run if you later inject more cards dynamically
+// new MutationObserver(applyStagger).observe(document.body, { childList: true, subtree: true });
